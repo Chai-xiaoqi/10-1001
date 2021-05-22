@@ -1,4 +1,11 @@
+
+main{padding-bottom:150px;}/* main的padding-bottom值要等于或大于footer的height值 */
+
+  
   body {
+   min-height:100%;
+   margin:0;
+   position:relative;
    padding-left: 4em;
    padding-right: 4em;
    font-family: Georgia, "Times New Roman",
@@ -80,13 +87,51 @@
     .dropdown:hover .dropdown-content {
       display: block;
     }
+    img{
+      display: block;
+      height: 300px;
+    }
   footer{
+    
     text-align: center;
    
     background-color: black;
     color:white;
-    bottom: 0px;
-    position: absolute;
-    width: 100%;
+    bottom: 0;
+    position:fixed;
+    width: 90%;
+   height: 60px;
     
   }
+  table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+  }
+  
+  td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+  }
+  
+  th {
+    background-color: rgb(235,235,235);
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: rgb(250,250,250);
+  }
+  
+  tr:nth-child(odd) td {
+    background-color: rgb(245,245,245);
+  }
+  
+  caption {
+    padding: 10px;
+  }
+  

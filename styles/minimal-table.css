@@ -80,4 +80,14 @@ tr:nth-child(odd) td {
 caption {
   padding: 10px;
 }
+footer{
+    
+  text-align: center;
+ 
+  background-color: black;
+  color:white;
+  bottom: 0px;
+  position: absolute;
+  width: 90%;
   
+}

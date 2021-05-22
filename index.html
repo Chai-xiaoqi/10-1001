@@ -3,10 +3,11 @@
 <head>
   <title>My first styled  page</title>
   	<link rel="stylesheet" href="styles/mystyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
 <body>
-
+<main>
 <!-- Site navigation menu -->
 <ul class="navbar">
   <li><a href="index.html">Home</a>
@@ -16,9 +17,24 @@
 	<li><a href="misc/choices.html">Choices</a>
 	<li><a href="misc/ethics.html">Ethical Reflections</a>
 	<li><a href="misc/references.html">References</a>
-   <li><a href="misc/process.html">Process Support</a>
+  
+    <div class="dropdown">
+      <button class="dropbtn">Process Support
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="misc/team-formation.html">Team Formation</a>
+        <a href="misc/proposal.html">Topic Proposal</a>
+        
+        <a href="misc/meetings.html">Meeting Minutes</a>
+        <a href="misc/portfolio.html">Project Portfolio</a>
+        <a href="misc/rubric.html">Assessment Rubric</a>
+        <a href="misc/guidelines.html">Guideline Conformance</a>
+      </div>
+    </div> 
 </ul>
-<p><img src="../images/rubric-page1-smallest-70" alt="Assessment Criteria Page Two"></p>
+
+<p><img src="images/Industrial-automation.jpeg" alt="Assessment"></p>
 <!-- Main content -->
 <h1>CTiS: Impact of Technology Site</h1>
 
@@ -35,11 +51,12 @@ It has some default links, which you can take as a start for your site structure
  
 <p><em>thanks to W3C for tutorial and adapted code from <a href="https://www.w3.org/Style/Examples/011/firstcss.en.html">Style Examples</a></p></em>
 <p><em>also thanks to WDN for HTML and CSS resources and any adapted code snippets from <a href= "https://developer.mozilla.org/en-US/docs/Web">Mozilla Developer Network</a></p></em>
- 
-</body>
+</main>
 <footer>
-  <p>Author: TEAM 1001<br>
-   </p>
+  <p>Author: CTIS TEAM 1001<br>
+    </p>
 </footer>
+</body>
+
 
 </html>
