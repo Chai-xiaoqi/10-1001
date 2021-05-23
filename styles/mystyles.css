@@ -1,7 +1,11 @@
 
-main{padding-bottom:150px;}/* main的padding-bottom值要等于或大于footer的height值 */
+main
+{padding-bottom:150px;}/* main的padding-bottom值要等于或大于footer的height值 */
 
-  
+  div.list.li{
+    font-size: larger;
+    font-weight: bold;
+  }
   body {
    min-height:100%;
    margin:0;
