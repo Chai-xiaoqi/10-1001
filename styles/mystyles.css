@@ -1,141 +1,197 @@
 
-main
-{padding-bottom:150px;}/* main的padding-bottom值要等于或大于footer的height值 */
+main{
+  padding-bottom:150px;
+}
 
-  div.list.li{
-    font-size: larger;
-    font-weight: bold;
-  }
-  body {
-   min-height:100%;
-   margin:0;
-   position:relative;
-   padding-left: 4em;
-   padding-right: 4em;
-   font-family: Georgia, "Times New Roman",
+div.list.li{
+  font-size: larger;
+  font-weight: bold;
+}
+
+body {
+  min-height:100%;
+  margin:0;
+  position:relative;
+  padding-left: 4em;
+  padding-right: 4em;
+  font-family: Georgia, "Times New Roman",
           Times, serif;
-		color:black;
-    background-color: white;
-    }
-	 ul.navbar {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    overflow:hidden;
-    background-color: black;
-   }
-	h1 {
-    font-family: Helvetica, Geneva, Arial,
-    SunSans-Regular, sans-serif ;
-  color:black;}
-  ul.navbar.li {
-    float: left;
-    color: white;
+  color:black;
+  background-color: lavender;
   }
+ul.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow:hidden;
   
-  ul.navbar.li a {
-    display: block;
-    text-align: left;
-    padding: 12px 16px;
-    text-decoration: none;
-  }
-  
-  ul.navbar a {
-    text-decoration: none;
-    float:left;
-    color:white; 
+}
+ul.navbar a {
+  font-size: larger ;
+  text-decoration: none;
+  float:left;
+  color:black; 
   text-align: center;
   padding: 14px 16px;}
 
+ul.navbar.li {
+  float: left;
+  color: white;
+}
 
-    .dropdown {
-      float: left;
-      overflow: hidden;
-    }
-    
-    .dropdown .dropbtn {
-      font-size: 16px;  
-      border: none;
-      outline: none;
-      color: white;
-      padding: 14px 16px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-    }
-  .navbar a:hover,.dropdown:hover .dropbtn{
-    background-color: grey;
-  }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color:grey;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    
-    .dropdown-content a {
-      float: none;
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: larger;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover,.dropdown:hover .dropbtn{
+  background-color: #bebef3;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#bebef3;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
   
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .dropdown-content a:hover {
-      background-color:darkgrey;
-    }
-    
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    img{
-      display: block;
-      height: 300px;
-    }
-  footer{
-    
-    text-align: center;
-   
-    background-color: black;
-    color:white;
-    bottom: 0;
-    position:fixed;
-    width: 90%;
-   height: 60px;
-    
-  }
-  table {
-    border-collapse: collapse;
-    border: 2px solid rgb(200,200,200);
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-  }
+.dropdown-content a {
+  float: none;
+
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color:lavender;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.title{
+  font-size: larger;
+  padding-top: 130px;
+  padding-left: 50px;
+  width: 40%;
+  display: block;
+  text-align:left;
+  margin-right: 100px; 
+}
+.column {
+  float: left;
+  width: 49%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column1 {
+  float: left;
+  width: 23%;
+  padding: 10px;
   
-  td, th {
-    border: 1px solid rgb(190,190,190);
-    padding: 10px 20px;
-  }
+}
+.row1::after {
+  content: "";
+  display: table;
+  clear: both;
+  width: 97%;
+
+}
+.reference{
+  display: table;
+  width: 97%;
+}
+img{
+width: 550px;
+height: 340px;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #bebef3; /* Green */
+  border: none;
+  color: black;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button:hover, a:active {
+  background-color: lavender;
+}
+h1 {
+  font-family: Helvetica, Geneva, Arial,
+  SunSans-Regular, sans-serif ;
+  color:black;
+}
+
+
+footer{
   
-  th {
-    background-color: rgb(235,235,235);
-  }
+  text-align: center;
+  background-color:lavender;
+  color:black;
+  bottom: 0;
+  position:fixed;
+  width: 90%;
+  height: 50px;
   
-  td {
-    text-align: center;
-  }
-  
-  tr:nth-child(even) td {
-    background-color: rgb(250,250,250);
-  }
-  
-  tr:nth-child(odd) td {
-    background-color: rgb(245,245,245);
-  }
-  
-  caption {
-    padding: 10px;
-  }
-  
+}
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245,245,245);
+}
+
+caption {
+  padding: 10px;
+}
