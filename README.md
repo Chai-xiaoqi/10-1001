@@ -1,3 +1,1 @@
-# CTiS-Test
- Test Site
- Site set up to test out options and editing and Github features
+This project is to build a website which can help people learn what is technology autoamtion. 
